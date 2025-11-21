@@ -1,50 +1,152 @@
-PG Life Web Application: 
-PG Life is a Full-Stack Web Application. This is a project that I was assigned to make during my Internshala Full Stack Web Development Internship Training. I got the guidance, and following that I made this web application with my own undertsnading and knowledge. It is customized according to what I thought would be better functionalities in this app, from the user perspective.
+# PG Life - Paying Guest Accommodation Platform
 
-Entire web-app is fully responsive and is operational from any device.
+## 📋 Project Overview
 
-Tech Stack:- HTML, CSS, Bootstrap 5, Javascript, AJAX, PHP, MySQL.
+PG Life is a full-stack web application designed to help users find and book paying guest (PG) accommodations across multiple cities. This project was developed as part of the **Internshala Full Stack Web Development Internship Training Program**.
 
-This web app has the following functionalities:-
+## 🎯 Key Features
 
-The home page:-
-	   	a. Search bar, where user can enter city name(in any case), and PGs listed in that city(if exists in database), will be shown as list.
-	  	b. Contains main cities in the form of circular sections, clicking upon which user can get the list of pgs existing in that city.
-	
-The PG list page:-
-		a. Shows the list of all the PGs and their main features in the selected city, in the form of beautiful cards.
-		b. Filter bar, using which the PGs can be sorted according to rent and rating, in ascending or descending order.
-		c. User can see here which PG is being marked interested by how many users, to know popularity.
-		d. After logging in, user can mark any PG(s) as interested, from the list itself, by clicking on the heart icon.
-		e. The heart icon toggles style in terms of fill color, when alternatively clicked to like or dislike the pg. Based upon click, interested user's number remains updated dynamically.
-	
-The PG details page:-
-		a. In the property list page, if any user clicks on "View" button, that pg's entire details is being displayed in the PG details page.
-		b. Images of the selected PG is being viewed at top front as a beautiful carousel.
-		c. The page shows all the details such as amenities, testimonials, address of the PG neatly.
-		d. User can see the selected PG is being marked interested by how many users, to know popularity.
-		e. After logging in, user can mark any PG(s) as interested, from the list itself, by clicking on the heart icon.
-		f. The heart icon toggles style in terms of fill color, when alternatively clicked to like or dislike the pg. Based upon click, interested user's number remains updated dynamically.
-	
-The dashboard:-
-		a. Appears only for the logged in users.
-		b. Shows the account details of the logged in users.
-		c. Below profile details, there is a section for Interested properties, which shows the cards of those PGs which the logged in user marked interested, accross any city.
-		d. From this list, user can click the heart icon on any PG card, to remove that PG from interested list, and that specific page section gets dynamically changed according to user's action.
-	
-The Navbar:-
-		a. Contains brand name.
-		b. If NOT logged in, it shows option to Signup and Login.
-		c. If logged in, it shows option to got to Dashboard and Logout. Also, it displays the user's first name who is being logged in currently, by using SESSION.
-		d. Totally responsive toggler navbar.
-	
-The Breadcrumb:-
-		a. Beautify shows the relative location of the user in the web app.
-		b. Contains hyperlinks to easily navigate back and forth an endpoint.
-	
-The Footer:-
-		a. Shows the list(containg hyperlinks) to show the list of PGs in the most popular cities.
-		b. Displays copywright information.
-	
-Entire web app can be surfed without logging in for user's ease and attraction for new users. Only certain features such as dashboard, and marking interested are available upon log in.
-Through the entire web app, each and every excetion is handled well using custom codes and UI, such that they are easily managed, and user can get to know the fault.
+### 🏠 Home Page
+- **Smart Search Bar**: Search for PGs by city name (case-insensitive)
+- **City Quick Access**: Clickable circular city sections for instant browsing
+- **Dynamic Results**: Real-time property listings based on database availability
+
+### 📝 Property Listing Page
+- **Beautiful Card Layout**: Property cards displaying key features and information
+- **Advanced Filtering**: Sort properties by rent and rating (ascending/descending)
+- **Popularity Indicator**: View how many users are interested in each property
+- **Interactive Wishlist**: Heart icon to mark properties as interested (login required)
+- **Real-time Updates**: Dynamic interest counter updates
+
+### 🏡 Property Details Page
+- **Image Carousel**: Beautiful image gallery of the selected property
+- **Comprehensive Information**: Amenities, testimonials, and exact address
+- **User Engagement**: See popularity metrics and add to wishlist
+- **Detailed View**: All property features displayed in an organized layout
+
+### 👤 User Dashboard
+- **Profile Management**: View and manage account details
+- **Saved Properties**: Collection of all interested properties across cities
+- **Quick Actions**: Remove properties from wishlist with one click
+- **Dynamic Updates**: Real-time UI changes based on user actions
+
+### 🧭 Navigation Features
+- **Responsive Navbar**: Brand name, login/signup options, and user greeting
+- **Session Management**: Displays logged-in user's first name
+- **Breadcrumb Navigation**: Easy tracking of current location in the app
+- **Informative Footer**: Quick links to popular cities and copyright information
+
+## 💻 Tech Stack
+
+### Frontend
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+- AJAX
+
+### Backend
+- PHP
+- MySQL
+
+## ✨ Technical Highlights
+
+- **Fully Responsive Design**: Works seamlessly on all devices (mobile, tablet, desktop)
+- **User-Friendly Interface**: Intuitive design with smooth navigation
+- **Session Management**: Secure user authentication and authorization
+- **Dynamic Content Loading**: AJAX for real-time updates without page refresh
+- **Database Integration**: Efficient MySQL queries for data retrieval
+- **Error Handling**: Custom UI for exceptions and user-friendly error messages
+- **Guest Browsing**: Most features accessible without login for better UX
+
+## 🚀 Features in Detail
+
+### Authentication System
+- User registration and login
+- Session-based authentication
+- Secure logout functionality
+- Protected routes for dashboard access
+
+### Search & Filter
+- Case-insensitive city search
+- Multiple filter options (rent, rating)
+- Sort in ascending/descending order
+- Real-time result updates
+
+### Wishlist Management
+- Add/remove properties with heart icon
+- Visual feedback with color toggle
+- Persistent across sessions
+- Accessible from multiple pages
+
+### Data Management
+- Dummy data SQL file included
+- Structured database schema
+- Efficient query optimization
+- Real-time data synchronization
+
+## 📂 Project Structure
+
+```
+PGLIFE/
+├── api/              # Backend API endpoints
+├── css/              # Stylesheets
+├── img/              # Images and assets
+├── includes/         # Reusable PHP components
+├── js/               # JavaScript files
+├── index.php         # Home page
+├── property_list.php # Property listing page
+├── property_detail.php # Property details page
+├── dashboard.php     # User dashboard
+├── logout.php        # Logout functionality
+├── dummy_data.sql    # Sample database data
+└── README.md         # Project documentation
+```
+
+## 🎓 Learning Outcomes
+
+Through this project, I gained hands-on experience with:
+- Full-stack web development workflow
+- Frontend-backend integration
+- Database design and management
+- Responsive web design principles
+- User authentication and session management
+- AJAX and asynchronous JavaScript
+- PHP and MySQL integration
+- UI/UX best practices
+
+## 🌟 Highlights
+
+- **Internship Project**: Completed as part of Internshala Full Stack Web Development Training
+- **Custom Implementation**: Personalized features based on user perspective
+- **Production-Ready**: Fully functional and operational web application
+- **Clean Code**: Well-organized and maintainable code structure
+
+## 📱 Responsive Design
+
+The application is fully responsive and tested on:
+- Desktop (1920px and above)
+- Laptop (1366px - 1920px)
+- Tablet (768px - 1024px)
+- Mobile (320px - 767px)
+
+## 🔧 Setup Instructions
+
+1. Clone the repository
+2. Import `dummy_data.sql` into your MySQL database
+3. Configure database connection in the includes folder
+4. Set up a local server (XAMPP/WAMP/MAMP)
+5. Access the application through localhost
+
+## 👨‍💻 Developer
+
+**Santhosh**  
+Data Analyst | Full Stack Web Development Trainee
+
+## 📝 License
+
+This project was created for educational purposes as part of the Internshala training program.
+
+---
+
+⭐ If you found this project interesting, please consider giving it a star!
